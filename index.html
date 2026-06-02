@@ -2,17 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Waste Warrior ♻️</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
         <h1>♻️ WASTE WARRIOR ♻️</h1>
-        <div class="score-board">Score: <span id="scoreValue">0</span></div>
+        
+        <div class="stats-container">
+            <div class="score-board">Score: <span id="scoreValue">0</span></div>
+            <div class="lives-board">Lives: <span id="livesValue">❤️❤️❤️</span></div>
+        </div>
+
         <canvas id="gameCanvas" width="600" height="400"></canvas>
+        
+        <div class="mobile-controls">
+            <button id="btnLeft" class="ctrl-btn">◀️ Sol</button>
+            <button id="btnRight" class="ctrl-btn">Sağ ▶️</button>
+        </div>
+
         <button id="restartButton">Restart Game</button>
-        <p>⬅️ Move with LEFT / RIGHT arrows ➡️</p>
+        <p class="desktop-tip">⬅️ Move with LEFT / RIGHT arrows ➡️</p>
     </div>
     <script src="game.js"></script>
 </body>
